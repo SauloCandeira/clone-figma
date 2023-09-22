@@ -1,0 +1,123 @@
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0; /* Remova as margens padrão para ocupar toda a largura */
+}
+
+/* Estilos para o contêiner principal */
+
+.container-header,
+.container-banner {
+    flex: 1; /* Ocupa o máximo da largura disponível */
+}
+
+
+.container-header {
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Estilos para o header */
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaçamento entre os itens */
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+    background: #252F3D;
+    width: 100%;
+    max-width: 1500px;
+}
+
+/* Estilos para cada item do header */
+.header-item {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    line-height: 12px;
+    text-transform: capitalize;
+}
+
+/* Estilos para o ícone */
+.icon {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+}
+
+
+
+/* Estilos para tornar o header responsivo em telas menores */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px; /* Reduzir o espaço interno do header em telas menores */
+    }
+    .header-item {
+        width: auto;
+        margin-bottom: 5px; /* Espaçamento menor entre os itens do header */
+    }
+    .icon {
+        margin-right: 5px; /* Espaçamento menor entre o ícone e o texto */
+    }
+}
+
+
+/* Estilos para o contêiner principal */
+.container-banner {
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    padding-top: 70px;
+    background: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Estilos para o banner */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Estilos para o logotipo do banner */
+.logo {
+    width: 40%; /* O logotipo ocupará toda a largura do banner */
+    max-width: 200px; /* Limita a largura máxima do logotipo */
+    height: 60%;
+    /* margin-bottom: 20px; Adiciona espaço entre o logotipo e os ícones */
+}
+
+/* Estilos para os ícones do banner */
+.icons {
+    display: flex;
+    /* gap: 20px; Espaçamento entre os ícones */
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 40%; /* Para garantir que os ícones ocupem toda a largura do banner */
+    max-width: 200px; /* Limita a largura máxima dos ícones */
+}
+
+/* Estilos para cada ícone do banner */
+.icon-banner img {
+    max-width: 80%;
+    height: 80%;
+}
