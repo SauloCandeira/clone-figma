@@ -1,51 +1,89 @@
-/* Estilo para o contêiner principal */
-.container {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background: white;
+/* Estilos para o contêiner do header */
+.header {
+    width: 1500px;
+    height: 50px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: #252F3D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px; /* Espaçamento à esquerda e à direita */
 }
 
-/* Estilo para a barra superior com fundo azul */
-.top-bar {
-    background-color: #003087;
-    color: white;
-    display: flex; /* Torna o conteúdo flexível */
-    justify-content: space-between; /* Distribui os elementos uniformemente na horizontal */
-    padding: 10px;
-    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha em telas estreitas */
-}
-
-/* Estilo para os elementos com fundo branco */
-.item-header {
-    width: 227px;
-    height: 22px;
-    background-color: #003087;
+/* Estilos para cada item do header */
+.header-item {
     display: flex;
     align-items: center;
-    margin-right: 20px; /* Espaçamento entre os elementos */
-    margin-bottom: 20px; /* Espaçamento entre as linhas */
+    color: white;
+    font-size: 12px;
+    font-family: Manrope, sans-serif;
+    font-weight: 500;
+    line-height: 12px;
+    text-transform: capitalize;
+    word-wrap: break-word;
+    margin-right: 30px; /* Espaçamento entre os itens */
 }
 
-/* Estilo para os ícones */
+/* Estilos para o ícone */
 .icon {
     width: 22px;
     height: 22px;
-    background-color: white;
-    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 8px; /* Espaçamento entre o ícone e o texto */
 }
 
-/* Estilo para o texto */
-.text {
-    color: white;
-    font-size: 12px;
-    font-family: Manrope;
-    font-weight: 500;
-    line-height: 12px;
-    word-wrap: break-word;
+
+/* <div style="width: 1500px; left: 0px; top: 50px;  background: white; justify-content: space-between; align-items: center; "> */
+/* Estilos para o contêiner do banner */
+.banner {
+    width: 100%;
+    max-width: 1500px;
+    padding-left: 127px; 
+    padding-right: 127px; 
+    padding-top: 1000px; 
+    padding-bottom: 30px; 
+    /* padding: 30px 127px; */
+    padding-top: 30px;
+    /* position: relative; */
+    position: absolute;
+    background: white;
+    /* display: flex; */
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Estilo para texto em maiúsculas */
-.text-uppercase {
-    text-transform: uppercase;
+/* Estilos para o logotipo */
+.logo {
+    width: 192px;
+    height: 36px;
+}
+
+/* Estilos para os ícones */
+.icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+/* Estilos para cada ícone */
+.icon {
+    width: 88px;
+    height: 32px;
+    position: relative;
+}
+
+/* Estilos para as imagens dos ícones */
+.icon img {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
 }

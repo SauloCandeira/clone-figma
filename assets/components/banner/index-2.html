@@ -1,0 +1,100 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div style="width: 1500px; padding-left: 127px; padding-right: 127px; padding-top: 30px; padding-bottom: 30px; left: 0px; top: 50px; position: absolute; background: white; justify-content: space-between; align-items: center; display: inline-flex">
+        <img style="width: 192px; height: 36px" src="../../../assets/images/clarifion-logo.png" />
+        <div style="justify-content: flex-start; align-items: flex-start; gap: 32px; display: flex">
+    
+            <div style="width: 88px; height: 32px; position: relative">
+                <img style="width: 88px; height: 32px; left: 0px; top: 0px; position: absolute" src="../../../assets/images/Frame 1484578055.svg" />
+            </div>
+            
+            <div style="width: 82px; height: 32px; position: relative">
+                <img style="width: 88px; height: 32px; left: 0px; top: 0px; position: absolute" src="../../../assets/images/norton-antivirus-logo 1.svg" />
+            </div>
+        </div>
+    </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Estilos para o contêiner principal */
+        .container {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        /* Estilos para o banner */
+        .banner {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background: white;
+            width: 100%;
+            max-width: 1500px; /* Largura máxima do banner */
+        }
+
+        /* Estilos para o logotipo do banner */
+        .logo {
+            width: 192px; /* Largura fixa para o logotipo */
+            height: 36px; /* Altura fixa para o logotipo */
+        }
+
+        /* Estilos para os ícones do banner */
+        .icons {
+            display: flex;
+            gap: 20px; /* Espaçamento entre os ícones */
+        }
+
+        /* Estilos para cada ícone do banner */
+        .icon img {
+            width: 88px; /* Largura fixa para os ícones */
+            height: 32px; /* Altura fixa para os ícones */
+        }
+
+        /* Estilos para tornar o banner responsivo em telas menores */
+        @media screen and (max-width: 768px) {
+            .banner {
+                flex-direction: row; /* Mantenha os elementos em linha */
+                justify-content: space-between; /* Adicione espaço entre os elementos */
+                padding: 20px 0; /* Reduza o espaço interno do banner em telas menores */
+                overflow-x: auto; /* Adicione rolagem horizontal se os elementos não couberem */
+            }
+            .icon img {
+                width: 88px; /* Largura fixa para os ícones */
+                height: 32px; /* Altura fixa para os ícones */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- BANNER -->
+        <div class="banner">
+            <img class="logo" src="../../../assets/images/clarifion-logo.png" alt="Clarifion Logo">
+            <div class="icons">
+                <div class="icon">
+                    <img src="../../../assets/images/Frame 1484578055.svg" alt="Icon 1">
+                </div>
+                <div class="icon">
+                    <img src="../../../assets/images/norton-antivirus-logo 1.svg" alt="Icon 2">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
